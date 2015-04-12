@@ -1,9 +1,7 @@
 var gamedim = {
-    width: 450,
-    height: 0
+    width: 800,
+    height: 600
 }
-
-gamedim.height = gamedim.width / 4 * 3;
 
 var game = new Phaser.Game(gamedim.width, gamedim.height, Phaser.AUTO, 'gameCanvasContainer', { preload: preload, create: create, update: update });
 
