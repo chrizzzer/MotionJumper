@@ -1,3 +1,3 @@
-# First Phaser Game
+# PhaserJumper
 
-This is my first HTML5 game with Phaser
+HTML5 game with Phaser and webcam tracking control
