@@ -38,7 +38,7 @@ function update() {
         if (rect.height > .2 * video.height && rect.width > .225 * video.width)
         {
             //print location
-            console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
+            // console.log(rect.x, rect.y, rect.height, rect.width, rect.color); // production
 
             //jump
             if (rect.y  < .2666666 * video.height) {
