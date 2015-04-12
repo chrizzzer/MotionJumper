@@ -1,4 +1,4 @@
-var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(800, 500, Phaser.AUTO, 'gameCanvasContainer', { preload: preload, create: create, update: update });
 
 var colors = new tracking.ColorTracker(['yellow']);
 

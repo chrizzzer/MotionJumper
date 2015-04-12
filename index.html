@@ -2,28 +2,40 @@
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" />
+    <!-- Not sure if want to make responsive:
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>TrackJumper</title>
-	<script type="text/javascript" src="js/phaser.min.js"></script>
+	
+    <script type="text/javascript" src="js/phaser.min.js"></script>
 	<script src="/js/tracking.js"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <!-- Bootstrap JS -->
+    <script src="/js/jquery-1.11.2.min.js"></script>
     <script src="/js/bootstrap.js"></script>
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-        #myVideo /* Make it so that controls *look* right */
-        {
-            transform: rotateY(180deg);
-            -webkit-transform:rotateY(180deg); /* Safari and Chrome */
-            -moz-transform:rotateY(180deg); /* Firefox */
-        }
-    </style>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div>
+                <video id="myVideo" width="400" height="300" preload autoplay loop muted></video>
+            </div>
+        </div>
+        <div id="gameCanvasContainer" class="col-md-9">
 
-<video id="myVideo" width="400" height="300" preload autoplay loop muted></video>
+        </div>
+    </div>
+</div>
+
 
 <script src="/js/game.js"></script>
 
