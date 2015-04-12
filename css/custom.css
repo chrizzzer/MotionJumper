@@ -7,3 +7,9 @@ body {
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
 }
+canvas {
+    -ms-transform: scale(.8, .8); /* IE 9 */
+    -webkit-transform: scale(.8, .8); /* Safari */
+    transform: scale(.8, .8);
+    margin: -10%;
+}
