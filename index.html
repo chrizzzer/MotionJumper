@@ -18,6 +18,18 @@
     <script src="/js/bootstrap.js"></script>
     <!-- Custom css -->
     <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- loading gamez -->
+    <script>
+    $.when(
+        $.getScript("/js/game-update.js"),
+        $.getScript("/js/game-create.js"),
+        $.getScript("/js/game-preload.js")
+    ).done(function() {
+            $.getScript("/js/game.js");
+        }
+    );
+    </script>
 </head>
 <body>
 <div class="container">
@@ -25,23 +37,16 @@
         
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div>
-                <video id="myVideo" width="250" height="" preload autoplay loop muted></video>
+                <video id="myVideo" width="350" height="" preload autoplay loop muted></video>
             </div>
         </div>
-        <div id="gameCanvasContainer" class="col-md-9">
+        <div id="gameCanvasContainer" class="col-md-8">
 
         </div>
     </div>
 </div>
-
-
-<script src="/js/game-update.js"></script>
-<script src="/js/game-preload.js"></script>
-<script src="/js/game-create.js"></script>
-<script src="/js/game.js"></script>
-
 
 </body>
 </html>

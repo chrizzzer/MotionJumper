@@ -35,24 +35,24 @@ function update() {
 
     else {
       event.data.forEach(function(rect) {
-        if (rect.height > 60 && rect.width > 90)
+        if (rect.height > .2 * video.height && rect.width > .225 * video.width)
         {
-        	//print location
-        	console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
+            //print location
+            console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
 
-        	//jump
-    		if (rect.y < 80) {
+            //jump
+            if (rect.y  < .2666666 * video.height) {
                 player.body.velocity.y = -350;
             }
 
-    		//move right
-    		if (rect.x < 80){
+            //move right
+            if (rect.x < .25  * video.width){
                 player.body.velocity.x = 150;
                 player.animations.play('right');
             }
 
-    		//move left
-            if (rect.x > 220) {
+            //move left
+            if (rect.x > .75  * video.width) {
                 player.body.velocity.x = -150;
                 player.animations.play('left');
             }
