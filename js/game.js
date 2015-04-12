@@ -3,3 +3,5 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, 'gameCanvasContainer', { prelo
 var colors = new tracking.ColorTracker(['yellow']);
 
 tracking.track('#myVideo', colors, {camera: true});
+
+var CycleCheckingCounter = 0;

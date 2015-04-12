@@ -41,18 +41,21 @@ function update() {
         	console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
 
         	//jump
-    		if (rect.y < 80)
-    		player.body.velocity.y = -350;
+    		if (rect.y < 80) {
+                player.body.velocity.y = -350;
+            }
 
     		//move right
-    		if (rect.x < 80)
-    		player.body.velocity.x = 150;
-        	player.animations.play('right');
+    		if (rect.x < 80){
+                player.body.velocity.x = 150;
+                player.animations.play('right');
+            }
 
     		//move left
-    		if (rect.x > 220)
-    		player.body.velocity.x = -150;
-        	player.animations.play('left');
+            if (rect.x > 220) {
+                player.body.velocity.x = -150;
+                player.animations.play('left');
+            }
         }	 
       });
     }
