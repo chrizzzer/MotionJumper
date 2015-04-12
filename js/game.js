@@ -1,5 +1,5 @@
-var gamedim {
-    width: 450;
+var gamedim = {
+    width: 450,
     height: 0
 }
 
@@ -13,8 +13,8 @@ tracking.track('#myVideo', colors, {camera: true});
 
 var CCC = 0;
 
-var video {
-    width: 350;
+var video = {
+    width: 350,
     height: 0
 }
 
