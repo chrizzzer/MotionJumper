@@ -52,7 +52,7 @@ function update() {
             }
 
             //move left
-            if (rect.x > .75  * video.width) {
+            if (rect.x > .6  * video.width) {
                 player.body.velocity.x = -150;
                 player.animations.play('left');
             }
